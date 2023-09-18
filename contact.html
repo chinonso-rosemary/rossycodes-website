@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact page</title>
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100%;
+        }
+
+        nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 150px;
+    font-size: 18px;
+    
+    }
+
+       nav ul li a{
+    text-decoration: none;
+    color: brown;
+    
+    }
+
+         nav ul li:hover{
+             background-color: rgb(110, 103, 103);
+             color: white;
+            /* transition: all.1s ease; */
+          }
+          .hamburger{
+    display:  none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+         h1{
+            color: red;
+            text-align: center;
+
+        }
+        h3{
+            margin: 20px 12px;
+        }
+        h2{
+            color: dodgerblue;
+        }
+       
+        form{
+            margin-top: 50px
+            margin-left: 50px;  
+      }
+        textarea{
+            width: 30%;
+            height: 200px;
+            margin-left: 100px;
+        }
+        .btn{
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 12px;
+        }
+        .btn:hover{
+            background-color: rgb(214, 157, 157);
+            color: black;
+        }
+        input,label{
+          display:block;
+           padding: 10px 12px;
+            margin: 10px;
+        }
+
+        .box{
+            justify-content: space-between;
+            margin-top:70px;
+            margin-left: 100px;
+        }
+        .box1{
+            height: 200px;
+            text-align: center;
+            border: 2px solid;
+            width: 300px;
+            margin: 10px;
+        }
+
+        i{
+            margin: 10px;
+            padding: 10px 12px;
+            font-size:35px;
+        }
+
+        .success{
+            color: rgba(14, 243, 14, 0.993);
+            font-size: 20px;
+            display: none;
+            position: absolute;
+            animation: button .3s linear;
+        }
+        .danger{
+            color: red;
+            font-size: 20px;
+            display: none;
+            position: absolute;
+            animation: button .3s linear;
+        }
+        @media (max-width:600px) {
+           
+            .hamburger{
+        display: block;
+        float: right;
+        margin-top: -26px;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        height: 300px;
+        width: 100%;
+        text-align: center;
+        transition: 0.3sqq;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+           .text{
+            display: block;
+           }
+           .container{
+            /* width: 100vh; */
+            height: 100vh;
+           }
+
+           h2{
+            font-size: 16px;
+           }
+           p{
+            overflow: hidden;
+           }
+           .box1{
+            width: 100%;
+            height: 100px;
+           }
+           .btn{
+            padding: 8px 8px;
+        }
+          textarea{
+            width: 50%;
+            height: 100px;
+            margin-left: 100px;
+        }
+        }
+
+ 
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="contact">
+        <h1>contact us </h1>
+        <h2>Cyberthrone</h2>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="./projet/projet.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Pages</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+        </nav>
+       <!-- <div class="box">
+        <div class="box1">
+            <i class="fa fa-location-dot"></i>
+<h2>Address</h2>
+<p>independent layout,ENUGU STATE NIGERIA</p>
+        </div>    
+<div class="box1">
+    <i class="fa fa-phone"></i>
+    <h2>phone number </h2>
+    <p>08138332117</p>
+</div>
+<div class="box1">
+    <i class="fa fa-envelope"></i>
+    <h2>Email address</h2>
+    <p>chinonsorosemary@925.com</p>
+</div> -->
+
+       </div>
+       <!-- <form action="https://formsubmit.co/chinonsorosemary952@gmail.com" method="POST"> -->
+        <form id="form">
+<label for="Name">Name</label>
+<input type="text" id="Name" required>
+<label for="email">email address</label>
+<input type="email" id="Email Address" required>
+<label for="number">phone number</label>
+<input type="number" id="phone-number" required>
+
+<div class="text">
+    <textarea placeholder="message" id="msg"></textarea>
+    <button class="btn" type="submit" id="btnn" onclick="message()">send message</button> 
+  </div>
+
+  <section id="message">
+    <div class="success" id="success">your message have been submitted</div>
+    <div class="danger" id="danger">field cannot be empty</div>
+  </section>
+       
+       </form>
+     
+    </div>
+</div>
+
+
+<script src="./contact.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join us page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /* background: url(./images/flowery\ road.jpeg); */
+            background-color: rgb(247, 238, 238);
+            width: 100%;
+            /* opacity: 0.5; */
+        }
+        form{
+            width: 50%;
+            background: url(./images/butterfly.jpeg) no-repeat;
+            /* opacity: 0.7; */
+            background-size: cover;
+            height: 400px;
+            margin-left: 200px;
+        }
+        .joinus{
+            margin: 100px;
+            width: 80%;
+            align-content: center;
+            /* text-align: center; */
+        }
+        input,label{
+            display: block;
+            /* margin-top: 60px; */
+            width: 25%;
+            margin: 10px 12px;
+            color:white;
+            background: transparent;
+            border: none;
+
+            /* border-bottom: 1px solid; */
+        }
+        input{
+            outline: none;
+        }
+        .joinus h2{
+            color: white;
+            text-align: center;
+        }
+         input:not(:last-of-type){
+            /* background: transparent; */
+            /* border: none; */
+            /* margin: 10px auto; */
+            border-bottom: 1px solid;
+            color: white;
+            
+        }
+        input:last-of-type{
+            border-bottom: 1px solid;
+            color: white;
+        }
+
+        button{
+            padding: 10px 12px;
+            margin: 10px 12px;
+            width: 30%;
+            border: none;
+            background-color: red;
+            color: white;
+            border-radius: 8px;
+            font-size: 20px;
+        }
+        button:hover{
+            background-color: rgb(99, 94, 94);
+        }
+        .joinus a{
+            text-decoration: none;
+            /* border: 1px solid red; */
+            background-color: brown;
+            color: white;
+            font-size: 20px;
+            padding: 8px 10px;
+            border-radius: 8px;
+        }
+        .go-back{
+        margin-left: 200px;
+        font-size: 16px;
+        color: black;
+        border: 1px solid;
+        border-radius: 10px;
+        background-color:white;
+        text-decoration: none;
+        padding: 10px 12px;
+        }
+        .go-back:hover{
+            background-color: brown;
+        }
+
+        @media (max-width:600px) {
+            form{
+            width: 100%;
+            background: url(./images/butterfly.jpeg) no-repeat;
+            /* opacity: 0.7; */
+            background-size: cover;
+            height: 400px;
+            margin-left: 10px;
+        }
+        .joinus a{
+            font-size: 16px;
+        }
+        button{
+            font-size: 16px;
+            padding: 6px 8px;
+        }
+        .joinus{
+            max-width: 100%;
+            margin-left: 50px;
+        }
+        }
+
+        @media (min-width:768px) {
+            .joinus{
+                max-width: 100%;
+            }
+            button{
+                font-size: 16px;
+            padding: 6px 8px;
+            }
+        }
+         
+
+
+
+    </style>
+</head>
+<body>
+    <form>
+       <div class="joinus">
+        <h2>wellcome back!</h2>
+        <h5>sign in to continue</h5>
+        <label for="uname">username</label>
+        <input type="text" id="Username" placeholder="username">
+       
+        <label for="password">password</label>
+        <input type="password" id="password" placeholder="enter password">
+       
+       <button>login</button>
+        <a href="../../form with js/form.html">don't have account?</a>
+       </div>
+       <a href="./projet/projet.html" class="go-back">Back</a>
+    </form>
+
+    <script src="./joinus.js"></script>
+</body>
+</html>
