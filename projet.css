@@ -1,0 +1,84 @@
+li{
+    padding: 8px 10px;
+}
+a{
+    text-decoration: none;
+}
+#services{
+    background: url(../images/flowery\ road.jpeg);
+    height: 700px;
+}
+span{
+    color: red;
+}
+
+#cybersecurity{
+background: url(../images/man-working.jpg) no-repeat;
+position: relative;
+background-size: cover;
+height: 700px;
+width: 100%;
+transform: scaleX(-1);
+}
+
+#cybersecurity .cybersecurity-ct{
+width: 35%;
+height: 400px;
+transform: scalex(-1);
+position: absolute;
+top: 50%;
+left: 10%;
+background-color: rgb(192, 199, 197);
+color: white;
+margin-top:-200px;
+margin-right: 100px;
+text-align: center;
+}  
+
+#cybersecurity h3{
+font-size: 1.5rem;
+color: black;
+margin: 20px;
+}
+#cybersecurity p{
+margin: 10px;
+}
+ #advert i{
+    font-size: 150px;
+ }  
+ .review{
+    font-size: 50px;
+    margin-left: 200px;
+ }
+
+@media (max-width:600px){
+    #services{
+        height: 1050px;
+    }
+    #cybersecurity .cybersecurity-ct{
+        height: 400px;
+        width: 50%;
+        padding: 4px 10px;
+    }
+    
+#cybersecurity h3{
+    font-size: 14px;
+}
+#advert i{
+    font-size: 60px;
+ }  
+ .review{
+    font-size: 20px;
+    margin-left: 100px;
+ }
+
+
+
+
+
+
+
+}
+
+   
+
