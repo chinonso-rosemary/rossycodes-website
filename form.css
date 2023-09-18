@@ -1,0 +1,89 @@
+body{
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container{
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px black;
+    width: 400px;
+    max-width: 100%;
+}
+.header{
+    background-color: yellow;
+    border-bottom: 1px solid white;
+    padding: 20px 40px;
+
+}
+h2{
+    margin: 0;
+    text-align: center;
+    font-size: bold;
+}
+.form{
+    padding: 30px 40px;
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    display: inline;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    border: 3px solid rgb(190, 178, 178);
+    border-radius: 9px;
+    display: block;
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+}
+ .form-control.success input{
+    border-color: rgb(25, 255, 25);
+}
+.form-control.error input{
+    border-color: red;
+}
+.form-control.error small{
+    color: red;
+    visibility: visible;
+} 
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+button{
+    background-color: rgb(117, 116, 36);
+    color: black;
+    /* border: 2px solid green; */
+    border-radius: 10px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+.success{
+    font-size: 20px;
+    color: green;
+    position: absolute;
+    animation:button .3s linear;
+    display: none;
+}
+.danger{
+     font-size: 20px;
+    color: red;
+    position: absolute;
+    animation:button .3s linear;
+    display: none;
+}
